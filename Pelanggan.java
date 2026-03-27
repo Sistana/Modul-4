@@ -19,6 +19,22 @@ public class Pelanggan {
     
     }
 
+        public String getNama() {
+            return nama;
+    }
+
+        public String getNomorPelanggan() {
+            return nomorPelanggan;
+    }
+
+        public double getSaldo() {
+            return saldo;
+    }
+
+        public boolean isStatusBlokir() {
+            return statusBlokir;
+    }
+
     public boolean autentikasi(String nomorPelanggan, String pin) {
         if (statusBlokir) {
             return false;
